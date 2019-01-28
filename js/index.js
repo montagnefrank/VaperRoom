@@ -56,7 +56,7 @@ function sendMsg() {
     var currentdate = new Date(),
         text = $('#chatInp').val();
     if (text.length > 0) {
-        $('#chatBoxMsgs').append('<div class="messages-item inbox"> <img src="/img/default.jpg" class="img-circle img-thumbnail"> <div class="messages-item-text"> ' + text + '</div> <div class="messages-item-date">' + currentdate.getHours() + ':' + currentdate.getMinutes() + ' ' + currentdate.getDate() + '.' + currentdate.getMonth() + 1 + '.' + currentdate.getFullYear() + '</div> </div>');
+        $('#chatBoxMsgs').append('<div class="messages-item inbox"> <img src="img/default.jpg" class="img-circle img-thumbnail"> <div class="messages-item-text"> ' + text + '</div> <div class="messages-item-date">' + currentdate.getHours() + ':' + currentdate.getMinutes() + ' ' + currentdate.getDate() + '.' + currentdate.getMonth() + 1 + '.' + currentdate.getFullYear() + '</div> </div>');
         var objDiv = document.getElementById("mCSB_1");
         objDiv.scrollTop = objDiv.scrollHeight;
     }
